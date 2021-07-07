@@ -32,9 +32,11 @@ button {
 
 .login-form{
     grid-area: login-form;
-    border: 1px solid black;
+    width: 340px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%),
+    0 8px 16px rgb(0 0 0 / 20%);
     margin: 0 auto;
-    width: 400px;
 }
 
 .login-form .form-row {
@@ -75,6 +77,15 @@ button {
 
 .login-footer{
     grid-area: login-footer;
+    width: 340px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.login-footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .container-login{
@@ -82,16 +93,26 @@ button {
     height: 100vh;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 200px 360px 1fr;
     grid-template-areas: "login-title" "login-form" "login-footer";
 }
 
 @media screen and (min-width: 900px) {
     .container-login{
         height: 75vh;
-        padding:100px 50px;
+        padding:200px 50px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 200px;
+        grid-template-rows: 350px 200px;
         grid-template-areas: "login-title login-form" "none login-footer";
+    }
+    .login-title{
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .container-login {
+        grid-template-columns: 600px 400px;
+        justify-content: center;
     }
 }
