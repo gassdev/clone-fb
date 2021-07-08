@@ -64,7 +64,6 @@
 .container-register .register-form .form-inline-input input,
 .container-register .register-form .form-group-input input {
     flex: 1;
-    font-size: 1.2rem;
 }
 
 .container-register .form-select-date{
@@ -119,4 +118,27 @@
     height: 36px;
     line-height: 5px;
     color: white;
+}
+
+.container-register .form-inline-date p,
+.container-register .form-inline-sexe p {
+    color: gray;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px){
+    .container-register{
+        width: 360px; 
+    }
+    .container-register .form-radio-items .form-radio-item label {
+        bottom: 15px;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container-register .register-form .form-inline-input input,
+    .container-register .register-form .form-group-input input {
+        font-size: 1.2rem;
+    }
 }
