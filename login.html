@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="container-login" style="display: none;">
+        <div class="container-login">
             <div class="login-title">
                 <h1>facebook</h1>
                 <p>
@@ -40,7 +40,7 @@
                     <div class="divider">
                     </div>
                     <div class="form-button">
-                        <button class="bt-login-create-account">Créer un compte</button>
+                        <button class="bt-login-create-account" id="create-account-button">Créer un compte</button>
                     </div>
                 </form>
             </div>
@@ -51,8 +51,11 @@
             </div>
         </div>
 
-        <div class="container-register">
-            <div class="close">
+        <div class="overlay" id="overlay">
+        </div>
+
+        <div class="container-register" id="register-popup">
+            <div class="close" id="close-register">
                 <i class="fas fa-times"></i>
             </div>
             <div class="register-title">
@@ -139,6 +142,7 @@
 
 
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
